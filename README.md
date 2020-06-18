@@ -10,7 +10,7 @@ The output of the model is a 4 channel image of 128x128 pixel with the 4th chann
 All the layers have relu activation functions applied to them except for the last layer which has a tanh function since we want the outputs to be in the range of -1 to 1(same as out input).
 
 The architecture looks something like this :
-***Though the dimensions might not match, but the architeure is similar. ***
+***Though the dimensions might not match, but the architeure is similar.***
 
 ![](https://github.com/sanketsans/Image-Matting-U-Net/blob/master/U-net-Convolutional-Neural-Network-model-The-U-net-model-contains-two-parts.png)
 
