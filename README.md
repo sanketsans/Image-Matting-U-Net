@@ -2,12 +2,15 @@
 Automatic portrait segmentation using Wave U-net model 
 
 The model takes a rgb image of 128x128 pixels. It then goes though in_conv layer - which is 2 convolutional layer.
+
 Later, it goes through 3 down_sample layers - which is a maxpooling layer followed by a in_conv layer(2 convolutional layer).
 Once the encoder part is done, the model moves to the decoder part. In it, the output of the encoder is presented to a deconvlutional layer(up_sample_conv) which is merged with the parallel layer(concat) in the encoder - Once merged, two convolutions(in_conv) are performed. This process is continued for 3 iterations.
+
 The output of the model is a 4 channel image of 128x128 pixel with the 4th channel being the segmented map of the image and other three being the rgb channels.
 All the layers have relu activation functions applied to them except for the last layer which has a tanh function since we want the outputs to be in the range of -1 to 1(same as out input).
+
 The architecture looks something like this :
-***Though the dimensions might not match***
+***Though the dimensions might not match, but the architeure is similar. ***
 
 ![](https://github.com/sanketsans/Image-Matting-U-Net/blob/master/U-net-Convolutional-Neural-Network-model-The-U-net-model-contains-two-parts.png)
 
