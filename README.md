@@ -19,7 +19,9 @@ Though I did not use the entire dataset(gdrive storage limit). I only partial im
 sufficent. 
 In the dataset, you get images of people and their segmented output in different folder. So, I created dataloader for the 
 training purpose which could provide me a pair of the original (feature image) and its segmented result - which I can compare
-the output of my Wave U-net model. 
+the output of my Wave U-net model.
+
+My Partial Dataset : https://drive.google.com/drive/folders/1yzj4VsIrN9RHWDNPm9FcMmIFYCSq5G-J?usp=sharing 
 
 !["Dataloader image pairs"](https://github.com/sanketsans/Image-Matting-U-Net/blob/master/dataloader_output.png)
 
@@ -39,6 +41,8 @@ vanilla MSE. Sum reduction proved to provide better results.
 
 ------------------------------------------------------------------------------------------------
 I also tried to use the model on celeb dataset- http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html
+
+I have uploaded about 200 images for testing purposes on my gdrive. You can access here : https://drive.google.com/drive/folders/1S0Bzbv6l_BrVXzaTMJCcsChIy62Szvf4?usp=sharing
 
 ![](https://github.com/sanketsans/Image-Matting-U-Net/blob/master/celeb_pred.png)
 
